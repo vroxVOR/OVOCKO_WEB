@@ -1,0 +1,275 @@
+/* Základné štýly */
+* {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fce0a8;
+    padding: 10px 50px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+.head_ovocko {
+    font-size: 32px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.head_menu {
+    display: flex;
+}
+
+.head_menu_list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.link {
+    color: black;
+    font-size: 20px;
+}
+
+/* Skryť tlačidlo na veľkých obrazovkách */
+.menu-toggle {
+    display: none;
+}
+
+/* Hero sekcia */
+.hero_01 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Gule v pozadí - nastavené z-index na -1 pre všetky gule */
+.hero_01 .ball {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;  /* Všetky gule sú v pozadí (nízky z-index) */
+}
+
+/* Najmenšie gule */
+.hero_01 .ball-small {
+    width: 50px;
+    height: 50px;
+}
+
+/* Stredné gule  */
+.hero_01 .ball-medium {
+    width: 100px;
+    height: 100px;
+}
+
+/* Najväčšie gule  */
+.hero_01 .ball-large {
+    width: 200px;
+    height: 200px;
+}
+
+/* Farby pre gule */
+.ball-farba1 {
+    background-color: #fce0a8;
+}
+
+.ball-farba2 {
+    background-color: #ffd067;
+}
+
+.ball-farba3 {
+    background-color: #d6a543;
+}
+
+/* Umiestnenie gúľ */
+.ball1 {
+    top: 2%;
+    left: 13%;
+}
+
+.ball2 {
+    top: 63%;
+    left: 42%;
+}
+
+.ball3 {
+    top: 90%;
+    left: 82%;
+}
+
+.ball4 {
+    top: 33%;
+    left: 43%;
+}
+
+.ball5 {
+    top: 13%;
+    left: 97%;
+}
+
+.ball6 {
+    top: 55%;
+    left: 88%;
+}
+
+.ball7 {
+    top: 76%;
+    left: 34%;
+}
+
+.ball8 {
+    top: 45%;
+    left: 97%;
+    z-index: -1;  /* Tento z-index zabezpečí, že guľa bude pod obsahom */
+}
+
+.ball9 {
+    top: 33%;
+    left: -2%;
+}
+
+/* Ďalšie štýly pre hero sekciu */
+.hero_01_left {
+    flex: 1;
+    max-width: 800px;
+    margin-left: 70px;
+}
+
+.hero_01_right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_01_right_image {
+    max-height: 400px;
+    width: auto;
+}
+
+.hero_01_left_image {
+    max-height: 250px;
+    width: auto;
+}
+
+.hero_01_left_heading {
+    font-size: 90px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.hero_01_left_text {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+.hero_01_left_button {
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 100px;
+    width: 600px;
+    padding: 10px;
+    background-color: #ffd067;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+/* Media Queries pre responzivitu */
+@media (max-width: 1180px) {
+    .hero_01 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero_01_left {
+        margin-left: 0px;
+    }
+
+    .hero_01_left_heading {
+        font-size: 64px;
+    }
+
+    .hero_01_left_image {
+        max-height: 250px;
+        width: auto;
+    }
+
+    .hero_01_left_text {
+        font-size: 26px;
+    }
+
+    .hero_01_left_button {
+        width: 650px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero_01_left {
+        margin-left: 0px;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .head_menu {
+        display: none; /* Skryť menu */
+        flex-direction: column;
+        background-color: #fce0a8;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        border-top: 2px solid black;
+    }
+
+    .head_menu.open {
+        display: flex;
+    }
+
+    .head_menu_list {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .hero_01 {
+        padding: 10px;
+    }
+
+    .hero_01_left_heading {
+        font-size: 36px;
+    }
+
+    .hero_01_left_text {
+        font-size: 18px;
+    }
+
+    .hero_01_right_image {
+        max-height: 250px;
+    }
+
+    .hero_01_left_button {
+        width: 450px;
+    }
+}
