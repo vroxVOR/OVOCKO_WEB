@@ -100,7 +100,7 @@ body {
 /* Umiestnenie gúľ */
 .ball1 {
     top: 2%;
-    left: 13%;
+    left: 3%;
 }
 
 .ball2 {
@@ -114,29 +114,30 @@ body {
 }
 
 .ball4 {
-    top: 33%;
+    top: 13%;
     left: 43%;
 }
 
 .ball5 {
-    top: 13%;
-    left: 97%;
+    top: 34%;
+    left: 87%;
 }
 
 .ball6 {
-    top: 55%;
-    left: 88%;
+    top: -2%;
+    left: 76%;
+    clip-path: inset(14px 0 0 0);
 }
 
 .ball7 {
     top: 76%;
     left: 34%;
+    clip-path: inset(0 0 34px 0);
 }
 
 .ball8 {
     top: 45%;
-    left: 97%;
-    z-index: -1;  /* Tento z-index zabezpečí, že guľa bude pod obsahom */
+    left: 53%;
 }
 
 .ball9 {
@@ -191,38 +192,12 @@ body {
     cursor: pointer;
 }
 
-/* Media Queries pre responzivitu */
-@media (max-width: 1180px) {
+
+@media (max-width: 300px) {
+
     .hero_01 {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero_01_left {
-        margin-left: 0px;
-    }
-
-    .hero_01_left_heading {
-        font-size: 64px;
-    }
-
-    .hero_01_left_image {
-        max-height: 250px;
-        width: auto;
-    }
-
-    .hero_01_left_text {
-        font-size: 26px;
-    }
-
-    .hero_01_left_button {
-        width: 650px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero_01_left {
-        margin-left: 0px;
+        padding: 10px 20px;
+        border-bottom: 3px solid black;
     }
 
     .menu-toggle {
@@ -235,42 +210,84 @@ body {
 
     .head_menu {
         display: none; /* Skryť menu */
-        flex-direction: column;
-        background-color: #fce0a8;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        border-top: 2px solid black;
     }
 
-    .head_menu.open {
-        display: flex;
+    .hero_01_left_image {
+        max-height: 150px;
+        width: auto;
     }
 
-    .head_menu_list {
-        flex-direction: column;
-        gap: 15px;
-        padding: 10px 0;
-    }
-
-    .hero_01 {
-        padding: 10px;
+    .hero_01_left {
+    margin-left: 0px;
     }
 
     .hero_01_left_heading {
         font-size: 36px;
+        padding-bottom: 10px;
     }
 
     .hero_01_left_text {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .hero_01_left_button {
+        font-size: 20px;
+        width: 260px;
+    }
+
+    .ball6 {
+        top: -2%;
+        left: 70%;
+        clip-path: inset(14px 10px 0 0);
+    }
+
+    .ball2 {
+        top: 68%;
+        left: 16%;
+    }
+
+    .ball3 {
+        top: 76%;
+        left: 82%;
+    }
+
+    .ball5 {
+        clip-path: inset(0 61px 0 0);
+    }
+
+    .ball7 {
+        top: 70%;
+        left: 24%;
+        clip-path: inset(0 0 0 0);
+    }
+
+    .ball8 {
+        clip-path: inset(0 19px 0 0);
+    }
+
+    .ball9 {
+        top: 40%;
+        left: -36%;
     }
 
     .hero_01_right_image {
         max-height: 250px;
+        width: auto;
     }
 
-    .hero_01_left_button {
-        width: 450px;
+    .ball-large {
+        transform: scale(0.5); /* Zmenší o 20 % */
     }
+
+    .hero_01_right {
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 301px) and (max-width: 400px) {
+
+}
+
+.additional-section {
+    background-color: aqua;
 }
