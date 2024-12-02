@@ -57,7 +57,7 @@ body {
 .hero_01 {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 20px 40px;
     flex-wrap: wrap;
@@ -225,7 +225,7 @@ body {
 
 .hero2_main_box{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 40px;
     height: fit-content;
@@ -380,3 +380,193 @@ body {
     border-radius: 50%;
     clip-path: inset(0 0 0 58px);
 }
+
+
+/* hero3  koniec */
+
+/* hero4  */
+
+.hero4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #fce0a8;
+    padding: 50px;
+}
+
+.hero4_heading {
+    font-family: "League Spartan", sans-serif;
+    font-size: 50px;
+}
+
+.hero4_text_div {
+    max-width: 810px;
+}
+
+.hero4_text {
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/* hero4  koniec */
+
+/* hero5 */
+
+.hero5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hero5_left_div_image {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    padding:30px 25px 20px 25px;
+    margin-left: 40px;
+
+}
+
+.hero5_left_image {
+    height: 350px;
+    width: auto;
+    border: 5px solid black;
+}
+
+.hero5_svgs_left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero5_svgs_left1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.svgs_1 {
+    height: 60px;
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+.svgs_2 {
+    height: 75px;
+    width: auto;
+}
+
+.share_icon {
+    height: 75px;
+    width: auto;
+}
+
+.hero5_right {
+    margin: 30px auto;
+}
+
+.hero5_right_div {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 650px;
+}
+
+
+.hero5_right_instagram {
+    height: 90px;
+    width: auto;
+}
+
+.hero5_right_instagram_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 640px;
+}
+
+
+.hero5_right_heading {
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    font-size: 48px;
+}
+
+.hero5_right_instagram_text {
+    
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.hero5_right_text {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.ball13 {
+    height: 200px;
+    width: 200px;
+    background-color: #fce0a8;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    z-index: -1;
+    border-radius: 50%;
+    clip-path: inset(0 0 0 120px);
+}
+
+.ball14 {
+    height: 150px;
+    width: 150px;
+    background-color: #fce0a8;
+    position: absolute;
+    top: 68%;
+    left: 90%;
+    z-index: -1;
+    border-radius: 50%;
+    clip-path: inset(0 7px 0 0);
+
+}
+
+.ball15 {
+    height: 130px;
+    width: 130px;
+    background-color: #ffd067;
+    position: absolute;
+    top: 11%;
+    left: 77%;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.ball16 {
+    height: 200px;
+    width: 200px;
+    background-color: #d6a543;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.ball17 {
+    height: 160px;
+    width: 160px;
+    background-color: #d6a543;
+    position: absolute;
+    top: 4%;
+    left: 26%;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+/* hero5 koniec */
