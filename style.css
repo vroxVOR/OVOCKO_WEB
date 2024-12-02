@@ -48,7 +48,12 @@ body {
     display: none;
 }
 
-/* Hero sekcia */
+/* Header koniec */
+
+
+
+
+/* main sekcia */
 .hero_01 {
     position: relative;
     display: flex;
@@ -191,9 +196,13 @@ body {
     border: 2px solid black;
     cursor: pointer;
 }
+/*main koniec*/
 
 
-/* Hero 2 */
+
+
+
+/*hero2*/
 .hero2{
     position: relative;
 }
@@ -263,4 +272,111 @@ body {
     height: 50%; /* Pokryje spodnú polovicu */
     width: 100%; /* Rozšíri na celú šírku */
     z-index: -2;
+}
+/* hero2 koniec  */
+
+/* hero3  */
+
+.hero3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 150px 50px 150px;
+    gap: 20px;
+    position: relative;
+}
+
+.hero3_box{
+    width: 400px;
+    margin: 10px 0px 20px 0px;
+    border: 7px solid black;
+    border-radius: 10%;
+}
+
+.hero3_box_image {
+    height: 400px;
+    width: 400px;
+    padding-bottom: 7px;
+}
+
+.hero3_main_left, .hero3_main_right {
+    flex: 1;
+}
+
+.hero3_main_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 520px;
+}
+
+.hero3_heading_right {
+    font-size: 54px;
+    font-family: "League Spartan", sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.hero3_text_right {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    text-align: right;
+}
+
+.hero3_longtext_right {
+    font-size: 26px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding-bottom: 30px
+}
+
+.hero3_button_right {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 3px solid black;
+    background-color: #ffd067;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+.ball10 {
+    height: 200px;
+    width: 200px;
+    background-color: #d6a543;
+    position: absolute;
+    top: -6%;
+    left: -6%;
+    z-index: -1;
+    border-radius: 50%;
+    clip-path: inset(36px 0 0 86px);
+}
+
+.ball11 {
+    height: 150px;
+    width: 150px;
+    background-color: #fce0a8;
+    position: absolute;
+    top: 8%;
+    left: 85%;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.hero3_button_right {
+}
+
+.ball12 {
+    height: 100px;
+    width: 100px;
+    background-color: #ffd067;
+    position: absolute;
+    top: 75%;
+    left: -4%;
+    z-index: -1;
+    border-radius: 50%;
+    clip-path: inset(0 0 0 58px);
 }
