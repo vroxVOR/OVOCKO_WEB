@@ -498,7 +498,6 @@ body {
 }
 
 .hero5_right_instagram_text {
-    
     font-size: 40px;
     font-family: "Open Sans", sans-serif;
 }
@@ -570,3 +569,100 @@ body {
 }
 
 /* hero5 koniec */
+
+/* hero6*/
+
+.hero6 {
+    display: flex;
+    justify-content: space-between; /* Rovnomerné rozloženie medzi sekciami */
+    align-items: center; /* Vertikálne zarovnanie obsahu */
+    padding: 100px 60px; /* Priestor od okrajov */
+    gap: 60px; /* Medzera medzi textovým blokom a obrázkom */
+}
+
+.hero6_left {
+    text-align: center;
+    flex: 1; /* Prispôsobenie veľkosti */
+}
+
+.hero6_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Prispôsobenie veľkosti */
+}
+
+.hero6_right_image {
+    max-height: 300px; /* Prispôsobenie výšky obrázka */
+    width: auto; /* Zachovanie pomeru strán */
+    object-fit: contain; /* Zabezpečenie dobrého prispôsobenia obrázka */
+}
+
+.hero6_left_heading {
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 40px; /* Priestor pod nadpisom */
+}
+
+.hero6_left_text {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    padding-bottom: 40px; /* Priestor pod textom */
+}
+
+.hero6_left_CTA {
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 100px; /* Zaoblené rohy */
+    width: 400px; /* Šírka tlačidla */
+    padding: 10px; /* Vnútorné odsadenie tlačidla */
+    background-color: #d6a543; /* Farba tlačidla */
+    cursor: pointer;
+}
+
+/* hero6 koniec */
+
+/* footer */
+.footer {
+    background-color: #fce0a8;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Aby bol obsah responzívny */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_one,
+.footer_three {
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+    padding: 10px;
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer_instagram {
+    height: 38px;
+    width: auto;
+}
+
+.footer_instagram_text {
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+    color: #333;
+}
