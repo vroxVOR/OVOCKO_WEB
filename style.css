@@ -193,101 +193,74 @@ body {
 }
 
 
-@media (max-width: 300px) {
-
-    .hero_01 {
-        padding: 10px 20px;
-        border-bottom: 3px solid black;
-    }
-
-    .menu-toggle {
-        display: block;
-        font-size: 24px;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    .head_menu {
-        display: none; /* Skryť menu */
-    }
-
-    .hero_01_left_image {
-        max-height: 150px;
-        width: auto;
-    }
-
-    .hero_01_left {
-    margin-left: 0px;
-    }
-
-    .hero_01_left_heading {
-        font-size: 36px;
-        padding-bottom: 10px;
-    }
-
-    .hero_01_left_text {
-        font-size: 16px;
-    }
-
-    .hero_01_left_button {
-        font-size: 20px;
-        width: 260px;
-    }
-
-    .ball6 {
-        top: -2%;
-        left: 70%;
-        clip-path: inset(14px 10px 0 0);
-    }
-
-    .ball2 {
-        top: 68%;
-        left: 16%;
-    }
-
-    .ball3 {
-        top: 76%;
-        left: 82%;
-    }
-
-    .ball5 {
-        clip-path: inset(0 61px 0 0);
-    }
-
-    .ball7 {
-        top: 70%;
-        left: 24%;
-        clip-path: inset(0 0 0 0);
-    }
-
-    .ball8 {
-        clip-path: inset(0 19px 0 0);
-    }
-
-    .ball9 {
-        top: 40%;
-        left: -36%;
-    }
-
-    .hero_01_right_image {
-        max-height: 250px;
-        width: auto;
-    }
-
-    .ball-large {
-        transform: scale(0.5); /* Zmenší o 20 % */
-    }
-
-    .hero_01_right {
-        padding-top: 10px;
-    }
+/* Hero 2 */
+.hero2{
+    position: relative;
 }
 
-@media (min-width: 301px) and (max-width: 400px) {
-
+.hero2_head {
+    text-align: center;
+    padding-top: 20px;
 }
 
-.additional-section {
-    background-color: aqua;
+.hero2_head_heading { 
+    font-size: 60px;
+    font-family: "League Spartan", sans-serif;
+}
+
+.hero2_head_text {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 20px;
+}
+
+.hero2_main_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: fit-content;
+    padding-bottom: 20px;
+}
+
+.hero2_box{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero2_box_1{
+    width: 400px;
+    margin: 10px 0px 20px 0px;
+    border: 7px solid black;
+    border-radius: 10%;
+}
+
+.hero2_box_heading {
+    font-family: "League Spartan", sans-serif;
+    font-size: 50px;
+}
+
+.hero2_box_text{
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+
+.hero2_box_1_image{
+    height: 400px;
+    width: 400px;
+    padding-bottom: 7px;
+}
+
+.background{
+    position: absolute;
+    background-color: #fce0a8;
+    position: absolute;
+    bottom: 0; /* Zarovná na spodok */
+    height: 50%; /* Pokryje spodnú polovicu */
+    width: 100%; /* Rozšíri na celú šírku */
+    z-index: -2;
 }
