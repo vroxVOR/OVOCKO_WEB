@@ -13,6 +13,7 @@ body {
 }
 
 /* Header */
+/* Header */
 .head {
     display: flex;
     justify-content: space-between;
@@ -21,6 +22,7 @@ body {
     padding: 10px 50px;
     border-bottom: 3px solid black;
     border-top: 3px solid black;
+    z-index: 2; /* Uistíme sa, že header je nad všetkým */
 }
 
 .head_ovocko {
@@ -32,6 +34,7 @@ body {
     display: flex;
 }
 
+/* Skryť menu na malých obrazovkách */
 .head_menu_list {
     display: flex;
     gap: 30px;
@@ -47,7 +50,6 @@ body {
 .menu-toggle {
     display: none;
 }
-
 /* Header koniec */
 
 
@@ -665,4 +667,74 @@ body {
     font-weight: 400;
     margin: 0;
     color: #333;
+}
+
+
+/* Štýly pre malé obrazovky */
+@media (max-width: 480px) {
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        position: absolute; /* Pozicionovanie hamburgeru */
+        right: 20px; /* Vzdialenosť od pravej strany */
+        top: 20px; /* Vzdialenosť od hornej časti */
+        z-index: 1000; /* Zabezpečí, že menu bude nad inými elementami */
+        
+    }
+
+    .head_menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fce0a8;
+        padding: 10px;
+        position: absolute;
+        top: 7%; /* Menu bude zobrazené pod headerom */
+        left: 0;
+        width: 100%;
+        z-index: 1; /* Aby bolo menu nad ostatným obsahom */
+        border-top: 2px solid black;
+    }
+
+    .head_menu.active {
+        display: flex;
+        z-index: 1; /* Aby bolo menu nad ostatným obsahom */
+    }
+
+    .head_menu_list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .link {
+        font-size: 18px;
+    }
+
+    .hero_01 {
+        z-index: 0; /* Aby obsah nebol pod menu */
+    }
+    
+    /* Gule v pozadí - nastavené z-index na -1 pre všetky gule */
+    .hero_01 .ball {
+        z-index: -1;  /* Všetky gule sú v pozadí (nízky z-index) */
+    }
+
+
+
+
+    .hero_01_left_image{
+        height: 200px;
+        width: auto;
+    }
+
+
+
+
+    .hero2, .hero3, .hero4, .hero5, .hero6, .footer{
+        display: none;
+    }
 }
