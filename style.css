@@ -693,7 +693,7 @@ body {
         background-color: #fce0a8;
         padding: 10px;
         position: absolute;
-        top: 7%; /* Menu bude zobrazené pod headerom */
+        top: 10%; /* Menu bude zobrazené pod headerom */
         left: 0;
         width: 100%;
         z-index: 1; /* Aby bolo menu nad ostatným obsahom */
@@ -723,18 +723,77 @@ body {
         z-index: -1;  /* Všetky gule sú v pozadí (nízky z-index) */
     }
 
-
-
-
     .hero_01_left_image{
-        height: 200px;
-        width: auto;
+        height: 180px;
     }
 
+    .hero_01_left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        padding: 0px;
+    }
 
+    .hero_01_left_heading {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .hero_01_right_image{
+        height: 300px;
+    }
+
+    .hero_01_left_button{
+        max-width: 300px;
+
+    }
+
+    .hero_01_right{
+        padding-top: 20px;
+    }
+
+    .hero_01_left_text {
+        text-align: center;
+        padding-bottom: 25px;
+    }
 
 
     .hero2, .hero3, .hero4, .hero5, .hero6, .footer{
         display: none;
     }
+
+    .ball4 {
+        top: 13%;
+        left: 11%;
+    }
+
+    .ball6 {
+        left: 70%;
+        clip-path: inset(17px 0 0 0);
+    }
+
+    .ball5 {
+        top: 34%;
+        left: 70%;
+    }
+
+    .ball7 {
+        top: 71%;
+        left: 12%;
+        clip-path: inset(0 0 0 0);
+    }
+
+    .ball8 {
+        top: 65%;
+        left: 63%;
+    }
+
+    .hero_01 .ball-large {
+        height: 140px;
+        width: 140px;
+    }
+
+
 }
