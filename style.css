@@ -111,8 +111,7 @@ body {
 }
 
 .ball2 {
-    top: 63%;
-    left: 42%;
+    display: none;
 }
 
 .ball3 {
@@ -148,8 +147,8 @@ body {
 }
 
 .ball9 {
-    top: 33%;
-    left: -2%;
+    top: 27%;
+    left: 2%;
 }
 
 /* Ďalšie štýly pre hero sekciu */
@@ -693,7 +692,7 @@ body {
         background-color: #fce0a8;
         padding: 10px;
         position: absolute;
-        top: 10%; /* Menu bude zobrazené pod headerom */
+        top: 60px; /* Menu bude zobrazené pod headerom */
         left: 0;
         width: 100%;
         z-index: 1; /* Aby bolo menu nad ostatným obsahom */
@@ -742,7 +741,7 @@ body {
     }
 
     .hero_01_right_image{
-        height: 300px;
+        display: none;
     }
 
     .hero_01_left_button{
@@ -751,7 +750,7 @@ body {
     }
 
     .hero_01_right{
-        padding-top: 20px;
+        display: none;
     }
 
     .hero_01_left_text {
@@ -760,34 +759,32 @@ body {
     }
 
 
-    .hero2, .hero3, .hero4, .hero5, .hero6, .footer{
+     .hero3, .hero4, .hero5, .hero6, .footer{
         display: none;
     }
 
     .ball4 {
         top: 13%;
-        left: 11%;
+        left: 70%;
     }
 
     .ball6 {
-        left: 70%;
-        clip-path: inset(17px 0 0 0);
+        display: none;
     }
 
     .ball5 {
-        top: 34%;
+        top: 40%;
         left: 70%;
     }
 
     .ball7 {
-        top: 71%;
-        left: 12%;
+        top: 78%;
+        left: 8%;
         clip-path: inset(0 0 0 0);
     }
 
     .ball8 {
-        top: 65%;
-        left: 63%;
+        display: none;
     }
 
     .hero_01 .ball-large {
@@ -795,5 +792,33 @@ body {
         width: 140px;
     }
 
+
+    .hero2_head_heading{
+        font-size: 3rem;
+    }
+
+    .hero2_main_box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero2_box {
+        display: flex;
+        flex-direction: column; /* Poradie prvkov */
+        align-items: center;
+        text-align: center;
+      }
+
+    .hero2_box1_heading1 {
+        order: 1; /* Obrázok bude posledný */
+      }
+    
+      .hero2_box1_text1 {
+        order: 2; /* Nadpis bude prvý */
+      }
+    
+      .hero2_box_1_image {
+        order: 3; /* Popis bude druhý */
+      }
 
 }
